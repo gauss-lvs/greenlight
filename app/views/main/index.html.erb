@@ -17,15 +17,19 @@
   <div class="container pt-9 pb-8">
     <div class="row">
       <div class="col-md-12 col-sm-12 text-center">
-        <h1 id="main-text" class="display-4 mb-4"> <%= t("landing.welcome").html_safe %></h1>
-        <p class="lead offset-lg-2 col-lg-8 col-sm-12 "><%= t("landing.about", href: link_to(t("greenlight"), "https://bigbluebutton.org/2018/07/09/greenlight-2-0/", target: "_blank", rel: "noopener")).html_safe %></p>
-        <%= link_to "https://youtu.be/Hso8yLzkqj8", target: "_blank" do %>
-          <h4><%= t("landing.video") %> <i class="far fa-play-circle ml-1"></i></h4>
-        <% end %>
+        <h1 id="main-text" class="display-4 mb-4">Willkommen auf unserem Webkonferenz-Server</h1>
+        <p class="lead offset-lg-2 col-lg-8 col-sm-12 ">
+          Auf diesem Server finden Webkonferenzen und Schulungen rund um unsere Software <a href="https://www.sopart.de" target="_blank" rel="noopener">SoPart&copy;</a> mit unseren Kunden statt.
+        </p>
       </div>
-
     </div>
   </div>
 </div>
 
-<%= render "main/components/features" %>
+<div class="container mt-3">
+  <h3>Datenschutzhinweis</h3>
+  <p>Im Rahmen einer Videokonferenz können und werden personenbezogene Daten verarbeitet. Die Verarbeitung dieser Daten ist zur Erfüllung
+    eines Vertrages erforderlich (i. S. d. Art.6 Abs.1 lit. b DSGVO). Sie als Nutzende haben das Recht auf Auskunft, Berichtigung, Widerspruch, Sperrung
+    und Löschung etc.</p>
+  <p>Mehr dazu finden Sie auf unserer Internetseite <a href="https://www.sopart.de/datenschutz.html">https://www.sopart.de/datenschutz.html</a>.</p>
+</div>
